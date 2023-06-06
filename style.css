@@ -28,8 +28,7 @@ body{
     font-family: 'Press Start 2P', cursive;
     font-family: 'Roboto Mono', monospace;
 }
-.botones{
-
+.ubicacion_boton_codificar, .ubicación_boton_desencriptar{
     text-align: center;
     position: relative;
     margin: 0 auto;
@@ -74,4 +73,18 @@ footer p{
 }
 .txt_encriptar{
     visibility: hidden;
+}
+.parte_superior{
+width: auto;
+height: 20%;
+background-color:aqua;
+text-align: center;
+display: -ms-flexbox;
+}
+.parte_inferior{
+width: auto;
+height: 20%;
+background-color: violet;
+text-align: center;
+display: -ms-flexbox;
 }
