@@ -22,29 +22,47 @@
     <main>
         <section class="parte_superior">
             <p>Parte Superior</p>
-            <div class="area_texto_superior"> 
-            <textarea name="texto_general" id="txt_encriptar" cols="30" rows="10"></textarea>
-            </div>
+            <h2>(1) Escribe o copia el texto que deseas Encriptar o Desencriptar</h2><br>
+            <textarea class="caja_texto_inicial" placeholder=""></textarea>
+        </section>
+        <section class="parte_medio">
+            <p>Parte Medio</p>
+            <h2>(2) Elije de que forma lo deseas codificar el texto:</h2><br>
+            <table>
+                <tr>
+                  <th>
+                    <input type="radio" id="1_clave_murcielago" name="fav_codificaciones" value="1_clave_murcielago">
+                    <label for="Murcielago">Murcielago</label><br>  
+                  </th>
+                  <th>
+                    <input type="radio" id="2_clave_murcielago" name="fav_codificaciones" value="2_clave_murcielago">
+                    <label for="Murcielago">Alura</label><br>  
+                  </th>
+                </tr>
+                </table>
         </section>
         <section class="ubicacion_boton_codificar">
-            <button class="boton_codificar">Encriptar</button>
+            <input type="button" titulo="Encriptar" class="boton_codificar" value="Encriptar">
         </section>
         <section class="ubicación_boton_desencriptar">
-            <button class="boton_desencriptar">Desencriptar</button>
+            <input type="button" titulo="Desencriptar" class="boton_desencriptar" value="Desencriptar">
         </section>
-
 
         <section class="parte_inferior">
             <p>Parte Inferior</p>
-            <div class="area_texto_inferior"> 
-            <textarea name="texto_desencriptar" id="txt_desencriptar" cols="30" rows="10"></textarea>
+            <h2>Resultado Generado</h2>
+            <textarea class="caja_texto_final"></textarea>
+            <div class="contenedor_boton_copiar_2">
+                <input type="button" class="boton_copiar" value="Copiar">
             </div>
         </section>
        
     </main>
     <footer>
-        <p>Ver: 1.5 </p>
+        <p>Ver: 1.5</p>
     </footer>
+
+<script src="reglas.js"></script>
 
 </body>
 

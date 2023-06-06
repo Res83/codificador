@@ -34,27 +34,96 @@ body{
     margin: 0 auto;
     padding: 15px;
 }
-.boton_codificar{
+.boton_codificar .boton_desencriptar{
     margin-bottom: auto;
     font-family: 'Press Start 2P', cursive;
     font-size: 20px; 
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.boton_codificar{
     line-height: 50px; 
     text-align: center; 
-    width:fit-content; 
+    width: 255px; 
     height: 50px;
-
 }
 .boton_desencriptar{
-    margin-bottom: auto;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px; 
     line-height: 50px; 
     text-align: center; 
-    width: fit-content; 
+    width: 270px; 
     height: 50px;
     }
 main{
     padding-bottom: 15%;
+    display: flexbox;
+}
+.parte_superior{
+    background-color: gainsboro;
+    text-align: center;
+    padding-bottom: 20px;
+    }
+.parte_superior h2{
+font-size:medium;
+        }
+.caja_texto_inicial{
+    color: black;
+    width: 45%;
+    height: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 25px;
+    resize:none;
+    text-align: center;
+    border-radius: 10px;
+        }
+.parte_medio{
+    text-align: center; 
+    padding:  25px;
+}
+.parte_medio table{
+    text-align: center; 
+    position: relative;
+    left: 35%;
+    background: orange;
+}
+.parte_inferior{
+        background-color: gainsboro;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+.caja_texto_final{
+    color: black;
+    width: 45%;
+    height: 120px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 25px;
+    resize:none;
+    text-align: center;   
+    border-radius: 10px;
+
+}
+.contenedor_boton_copiar_2{
+    text-align: center;
+    width: 100%;
+    height: 80%;
+}
+.boton_copiar{
+width: 15%;
+height: 80%;
+font-size: medium;
+text-decoration: solid;
+border-radius: 10px;
+padding: 15px;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+
 }
 footer{
     background: orange;
@@ -71,20 +140,6 @@ footer p{
     font-size: medium;
     margin-right: 20px;
 }
-.txt_encriptar{
-    visibility: hidden;
-}
-.parte_superior{
-width: auto;
-height: 20%;
-background-color:aqua;
-text-align: center;
-display: -ms-flexbox;
-}
-.parte_inferior{
-width: auto;
-height: 20%;
-background-color: violet;
-text-align: center;
-display: -ms-flexbox;
+.esconder{
+    display: none;
 }
